@@ -39,4 +39,6 @@ def your_url():
         return render_template('your_url.html', code=request.form['code'])
     else:
         return redirect(url_for('home'))
+
+
 @app.route('/')
